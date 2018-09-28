@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import AudioToolbox
 
 class ViewController: UIViewController {
 
@@ -24,6 +25,8 @@ class ViewController: UIViewController {
 
     @IBAction func buttonPressed(_ sender: UIButton) {
         
+        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))  
+        
         do {
             if mlkSoundEffect != nil {
                 if mlkSoundEffect!.isPlaying {
@@ -39,6 +42,21 @@ class ViewController: UIViewController {
             // error loading audio file
         }
         
+    }
+    
+    override func becomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            let string = "My name is Malcolm X"
+            let utterance = AVSpeechUtterance(string: string)
+            utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+            
+            let synth = AVSpeechSynthesizer()
+            synth.speak(utterance)
+        }
     }
     
 }

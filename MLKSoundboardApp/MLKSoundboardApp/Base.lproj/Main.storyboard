@@ -17,22 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJ4-uA-FtN">
-                                <rect key="frame" x="87.5" y="258.5" width="200" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="nMU-ug-eE7"/>
-                                    <constraint firstAttribute="width" secondItem="pJ4-uA-FtN" secondAttribute="height" multiplier="4:3" id="y3n-0r-uho"/>
-                                </constraints>
-                                <state key="normal" image="MLK"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFc-yB-Hqg"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ox9-pM-Kdi">
+                                <rect key="frame" x="87.5" y="146" width="200" height="375"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mI8-rP-bon">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="mI8-rP-bon" secondAttribute="height" multiplier="1:1" id="lGr-MO-YM7"/>
+                                            <constraint firstAttribute="width" constant="200" id="o2s-fL-1q2"/>
+                                        </constraints>
+                                        <state key="normal" image="malcolmx"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJ4-uA-FtN">
+                                        <rect key="frame" x="0.0" y="225" width="200" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="nMU-ug-eE7"/>
+                                            <constraint firstAttribute="width" secondItem="pJ4-uA-FtN" secondAttribute="height" multiplier="4:3" id="y3n-0r-uho"/>
+                                        </constraints>
+                                        <state key="normal" image="mlk"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFc-yB-Hqg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="pJ4-uA-FtN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6zn-JB-D5b"/>
-                            <constraint firstItem="pJ4-uA-FtN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DFr-WL-Aq8"/>
+                            <constraint firstItem="ox9-pM-Kdi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7oJ-we-VV7"/>
+                            <constraint firstItem="ox9-pM-Kdi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PX8-os-GWh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -43,6 +56,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="MLK" width="540" height="405"/>
+        <image name="malcolmx" width="412" height="450"/>
+        <image name="mlk" width="540" height="405"/>
     </resources>
 </document>
