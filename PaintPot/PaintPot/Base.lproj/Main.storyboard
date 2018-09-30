@@ -107,8 +107,8 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Etl-FS-3zR" customClass="DrawingView" customModule="PaintPot" customModuleProvider="target">
-                                <rect key="frame" x="16" y="190" width="343" height="488"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="190" width="375" height="488"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iWB-sn-ySS">
                                 <rect key="frame" x="16" y="120" width="343" height="50"/>
@@ -142,20 +142,20 @@
                                 <viewLayoutGuide key="safeArea" id="iK7-vl-eYH"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ft7-qW-wDt" secondAttribute="bottom" constant="20" id="0sH-Er-g7N"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ft7-qW-wDt" secondAttribute="trailing" constant="16" id="7kk-zV-m4h"/>
                             <constraint firstItem="l02-7P-mWj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="9En-gg-rl0"/>
                             <constraint firstItem="Etl-FS-3zR" firstAttribute="top" secondItem="iWB-sn-ySS" secondAttribute="bottom" constant="20" id="FEi-G8-66c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l02-7P-mWj" secondAttribute="trailing" constant="16" id="Gie-Hp-lbs"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Etl-FS-3zR" secondAttribute="trailing" constant="16" id="Mwm-CM-105"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Etl-FS-3zR" secondAttribute="trailing" id="Mwm-CM-105"/>
                             <constraint firstItem="iWB-sn-ySS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="PlW-MN-zAv"/>
                             <constraint firstItem="l02-7P-mWj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="PzP-uC-q8n"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iWB-sn-ySS" secondAttribute="trailing" constant="16" id="SKp-Rf-EVu"/>
                             <constraint firstItem="iWB-sn-ySS" firstAttribute="top" secondItem="l02-7P-mWj" secondAttribute="bottom" constant="16" id="hk9-yS-TDs"/>
                             <constraint firstItem="ft7-qW-wDt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jQm-wa-2FT"/>
-                            <constraint firstItem="Etl-FS-3zR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lfc-iJ-4KA"/>
+                            <constraint firstItem="Etl-FS-3zR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lfc-iJ-4KA"/>
                             <constraint firstItem="ft7-qW-wDt" firstAttribute="top" secondItem="Etl-FS-3zR" secondAttribute="bottom" constant="30" id="sYw-uO-LAJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
